@@ -1,0 +1,92 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+.filter__btn {
+  font-family: 'Roboto';
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f5f4fa;
+  color: var(--title-color);
+  padding: 6.56px 22.11px;
+  border-radius: 4px;
+  transition: background-color var(--trans-time), color var(--trans-time),
+    box-shadow var(--trans-time);
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--link-color);
+    color: var(--white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.projects__item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+/* .project-item:not(:nth-child(3n + 3)) {
+  margin-right: 30px;
+}
+.project-item:not(:nth-child(n + 6)) {
+  margin-bottom: 30px;
+} */
+.projects__link {
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--main-text-color);
+  transition: box-shadow var(--trans-time);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+.projects__description {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+.projects__name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  margin-bottom: 4px;
+}
+.projects__hide-text {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--white-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: transform var(--trans-time);
+  .projects__link:hover &,
+  .projects__link:focus & {
+    transform: translateY(-100%);
+  }
+}

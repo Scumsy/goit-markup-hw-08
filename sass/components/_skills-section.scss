@@ -1,0 +1,26 @@
+.skills__list {
+  display: flex;
+  margin-left: -30px;
+}
+.skills__item {
+  flex-basis: calc((100% - 4 * 30px) / 4);
+  margin-left: 30px;
+}
+.skills__card {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  align-items: center;
+  justify-content: center;
+}
+.skills__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--title-color);
+  margin-bottom: 10px;
+}

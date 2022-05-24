@@ -1,0 +1,125 @@
+.foot {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.foot-logo {
+  display: block;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+.address__text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--white-color);
+}
+.address__contact {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7px;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--trans-time);
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+  }
+}
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+.footer-social__list {
+  display: flex;
+}
+.footer-social__item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--trans-time);
+  &:hover,
+  &:focus {
+    background-color: var(--link-color);
+  }
+}
+
+.footer-cont {
+  display: flex;
+  align-items: baseline;
+}
+.footer-social {
+  margin-left: 70px;
+}
+.mailing {
+  margin-left: 93px;
+}
+.email-form {
+  display: flex;
+  height: 50px;
+}
+.email-form__input {
+  width: 358px;
+  height: 100%;
+  margin-right: 12px;
+  padding: 15px 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--white-color);
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.email-form__btn {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: center;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  background-color: var(--link-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 4px;
+  transition: background-color var(--trans-time);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
+
+.email-form__icon {
+  margin-left: 10px;
+  fill: var(--white-color);
+}

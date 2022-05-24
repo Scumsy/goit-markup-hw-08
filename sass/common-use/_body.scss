@@ -1,0 +1,41 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  background-color: var(--white-color);
+  color: var(--main-text-color);
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* outline: 1px solid tomato; */
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--title-color);
+  margin-bottom: 50px;
+}
+.logo {
+  text-decoration: none;
+  font-family: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+    sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--title-color);
+}
+.img--wraper {
+  position: relative;
+  overflow: hidden;
+}
