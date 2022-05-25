@@ -1,5 +1,8 @@
 .what-doing {
   padding-top: 0;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 .what-doing__list {
   display: flex;
