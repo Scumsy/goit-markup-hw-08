@@ -16,10 +16,20 @@
   &:not(:last-child) {
     margin-right: 8px;
   }
-  &:nth-child(4),
-  &:nth-child(5) {
+  &:not(:first-child) {
     margin-top: 15px;
   }
+  @media screen and (min-width: 241px) {
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+  @media screen and (min-width: 390px) {
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     &:nth-child(4),
     &:nth-child(5) {
@@ -128,7 +138,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  padding: 77px 24px;
   font-size: 18px;
   line-height: 1.56;
   color: var(--white-color);
@@ -137,5 +147,12 @@
   .projects__link:hover &,
   .projects__link:focus & {
     transform: translateY(-100%);
+  }
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px;
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
   }
 }
