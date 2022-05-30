@@ -12,24 +12,23 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 95%;
-  min-height: 609px;
+  width: 90%;
   padding: 40px;
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform var(--trans-time), opacity var(--trans-time);
-
+  @media screen and (max-width: 353px), (max-height: 620px) {
+    top: 10px;
+    left: 10px;
+    transform: translate(0) scale(1);
+  }
   @media screen and (min-width: 480px) {
     width: 450px;
     height: 609px;
   }
   @media screen and (min-width: 1200px) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
     min-width: 528px;
     min-height: 581px;
   }
@@ -142,10 +141,12 @@
 }
 .license__agreement {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   font-size: 12px;
   line-height: 1.2;
+  text-align: center;
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.7;
@@ -225,5 +226,8 @@
   &:hover,
   &:focus {
     background-color: #188ce8;
+  }
+  @media screen and (max-width: 320px) {
+    width: 150px;
   }
 }
